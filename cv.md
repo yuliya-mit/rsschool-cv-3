@@ -6,3 +6,9 @@
 * *Email:* **[yulia.mititel@yandex.ru](mailto:yulia.mititel@yandex.ru)**
 * *Telegram:* **@yuliya_mititel**
 
+## Skills ##
+1. HTML
+1. CSS
+1. GIT
+1. SQL
+1. Java Script basics

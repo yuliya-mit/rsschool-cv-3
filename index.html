@@ -5,33 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV of Yuliya Mititel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav></nav>
+    <div class="wrapper">
+    <nav>
+        <ul class="menu">
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+    
     <header>
-        <h1>Yuliya Mititel</h1>
-        <figure>
-            <img src="assets/photo.jpg" alt="photo of Yuliya Mititel">
+        
+        <figure class="photo">
+            <img src="assets/photo1.jpg" alt="photo of Yuliya Mititel">
           </figure>
+          <h1>Yuliya Mititel</h1>
     </header>
-    <aside></aside>
+    
+    <section id="education">
+    <h3>Education</h3>
+    <p><span class="bold">Years:</span> 2007-2012</p>
+    <p>Plekhanov Russian University of Economics</p>
+    <p>Faculty of Applied Informatics in Economics</p>
+    <p><span class="bold">Specialization:</span> Corporate information systems</p>
+    <p>Bachelor's degree</p>    
+    </section>
+
+    <section id="contact">
+        <h3>Contact</h3>
+        <ul>
+            <li><a href="+79036897649"><span class="bold">Phone:</span> +7 (903) 689-76-49</a></li>
+            <li><a href="mailto:yulia.mititel@yandex.ru"><span class="bold">Email:</span> yulia.mititel@yandex.ru</a></li>
+            <li><span class="bold">Telegram:</span> @yuliya_mititel</li>
+        </ul>
+    </section>
+    
     <section id="about_me">
         
     </section>
-
-    <section id="education">
-        
-    </section>
-    <section id="courses">
-        
-    </section>
-    
     <section id="skills">
-        
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java Script Basics</li>
+            <li>Transact-SQL</li>
+            <li>GIT</li>
+
+        </ul>
+    </section>
+    <section id="language">
+        <h3>Languages</h3>
+        <ul>
+            <li>Russian - native</li>
+            <li>English - intermediate</li>
+        </ul>
+    </section>
+    <section id="project">
+        <h3>Code example</h3>
+        <pre>
+            <code>
+                function toReadable (number) {
+                    const strNumber=String(number);
+                    const arrNumber=strNumber.split('');
+                    console.log(arrNumber);
+                      const lenNumber=strNumber.length;
+                      const arrWords= ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']; 
+                    const decades=['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+                    const hundred=['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+                    let wordNumber=[];
+                      switch (lenNumber) {
+                            case 1:
+                                 wordNumber[0]=arrWords[number];
+                                break;
+                            case 2:
+                                if (number <= 19) {
+                                    wordNumber[0]=arrWords[number];
+                                } else {
+                                    wordNumber[0]=decades[arrNumber[0]-2];
+                                    if (number%10!==0) {
+                                    wordNumber[1]=arrWords[arrNumber[1]];
+                                    }
+                                }
+                                break;
+                            case 3:
+                                wordNumber[0]=hundred[arrNumber[0]-1]+ ' hundred';
+                              let decWordNumber=Number(strNumber.substr(-2));
+                              if (number%100!==0) {
+                                  if (decWordNumber<=19) {
+                                    wordNumber[1]=arrWords[decWordNumber];
+                                  } else if (decWordNumber % 10===0) {
+                                    wordNumber[1]=decades[arrNumber[1]-2] ;
+                                    } else {
+                    wordNumber[1]=decades[arrNumber[1]-2];				
+                    wordNumber[2]=arrWords[arrNumber[2]];
+                                  }
+                              }
+                                break;
+                        }
+                    return wordNumber.join(' ');} 
+            </code>
+        </pre>
+
     </section>
     <footer>
+<div class="logo">
+    <a href="https://github.com/yuliya-mit">
+    <img src="assets/GitHub_Logo.png" alt="">
+    </a></div>
+<div class="year"><year>2021</year></div>
+    <div class="logo">
+        <a href="https://rs.school/js/">
+            <img src="assets/rs_school_js.svg" alt="">
+        </a>
+        </div>
 
     </footer>
+</div>
     
 
 </body>

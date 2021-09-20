@@ -12,22 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/highlight/styles/default.min.css">
+<script src="assets/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </head>
 <body>
     <div class="wrapper">
         
            <nav>
         <ul class="menu">
-            <li><a href="#about_me">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Code example</a></li>
         </ul>
     </nav>
     
     <header>
         
         <figure class="photo">
-            <img src="assets/photo1.jpg" alt="photo of Yuliya Mititel">
+            <img src="assets/photo1.png" alt="photo of Yuliya Mititel">
           </figure>
           <h1>Yuliya Mititel</h1>
     </header>
@@ -69,17 +73,11 @@
     <p><span class="bold">Specialization:</span> Corporate information systems</p>
     <p>Bachelor's degree</p>    
     </section>
-
-   
-    
-    <section id="about_me">
-        
-    </section>
     
     <section id="project">
         <h3>Code example</h3>
         <pre>
-            <code>
+            <code class="javascript">
     function toReadable (number) {
     const strNumber=String(number);
     const arrNumber=strNumber.split('');

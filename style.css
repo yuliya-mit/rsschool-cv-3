@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     color: #000000;
+    background-color: #f6e7de;
 }
 
 .wrapper {
@@ -15,18 +18,42 @@ body {
 }
 
 header {
+    margin: 0 auto;
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
 }
-
+main {
+    display: flex;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+    padding: 10px;
+    float: left;
+    height: 100%;
+    width: 500px;
+}
+.wrapper_center {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 10px;
+    flex-direction: column;
+}
+.photo {
+margin-left: 10px;
+}
 .photo img {
     width: 200px;
     height: 200px;
     float: left;
 }
+
 
 h1 {
     font-family: 'Roboto Slab', serif;
@@ -41,16 +68,20 @@ ul {
     list-style: none;
     padding-left: 0;
 }
-
+li {
+    padding-bottom: 20px;
+}
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100px;
-    margin-top: 15px;
+    margin-top: 50px;
+
 }
 
 .menu > li > a {
@@ -60,21 +91,36 @@ a {
     letter-spacing: 0.2rem;
     
 }
+.menu > li > a:hover {
+    color: maroon;
+}
+
+.menu > li > a:active{
+    border-bottom: 2px solid maroon;
+}
 
 section {
     margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 h3{
+    display: inline-block;
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     font-size: 24px;
     margin-bottom: 15px;
+   border-bottom: 2px solid maroon;
+}
+
+p {
+    padding-bottom: 10px;
 }
 
 .bold {
     font-weight: bold;
 }
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -86,4 +132,8 @@ footer {
 .year {
     font-size: 20px;
     font-weight: bold;
+}
+
+.fa {
+    padding-right: 10px;
 }

@@ -14,7 +14,8 @@
 </head>
 <body>
     <div class="wrapper">
-    <nav>
+        
+           <nav>
         <ul class="menu">
             <li><a href="#about_me">About me</a></li>
             <li><a href="#education">Education</a></li>
@@ -29,7 +30,36 @@
           </figure>
           <h1>Yuliya Mititel</h1>
     </header>
+    <main> 
+    <aside>
+        <section id="contact">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="+79036897649"><span class="bold">Phone:</span> +7 (903) 689-76-49</a></li>
+                <li><a href="mailto:yulia.mititel@yandex.ru"><span class="bold">Email:</span> yulia.mititel@yandex.ru</a></li>
+                <li><span class="bold">Telegram:</span> @yuliya_mititel</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java Script Basics</li>
+                <li>Transact-SQL</li>
+                <li>GIT</li>
     
+            </ul>
+        </section>
+        <section id="language">
+            <h3>Languages</h3>
+            <ul>
+                <li>Russian - native</li>
+                <li>English - intermediate</li>
+            </ul>
+        </section>
+    </aside>
+    <div class="wrapper_center">
     <section id="education">
     <h3>Education</h3>
     <p><span class="bold">Years:</span> 2007-2012</p>
@@ -39,36 +69,12 @@
     <p>Bachelor's degree</p>    
     </section>
 
-    <section id="contact">
-        <h3>Contact</h3>
-        <ul>
-            <li><a href="+79036897649"><span class="bold">Phone:</span> +7 (903) 689-76-49</a></li>
-            <li><a href="mailto:yulia.mititel@yandex.ru"><span class="bold">Email:</span> yulia.mititel@yandex.ru</a></li>
-            <li><span class="bold">Telegram:</span> @yuliya_mititel</li>
-        </ul>
-    </section>
+   
     
     <section id="about_me">
         
     </section>
-    <section id="skills">
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java Script Basics</li>
-            <li>Transact-SQL</li>
-            <li>GIT</li>
-
-        </ul>
-    </section>
-    <section id="language">
-        <h3>Languages</h3>
-        <ul>
-            <li>Russian - native</li>
-            <li>English - intermediate</li>
-        </ul>
-    </section>
+    
     <section id="project">
         <h3>Code example</h3>
         <pre>
@@ -78,8 +84,11 @@
                     const arrNumber=strNumber.split('');
                     console.log(arrNumber);
                       const lenNumber=strNumber.length;
-                      const arrWords= ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']; 
-                    const decades=['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+                      const arrWords= ['zero', 'one', 'two', 'three', 'four', 'five',
+                       'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 
+                       'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen']; 
+                    const decades=['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 
+                    'eighty', 'ninety'];
                     const hundred=['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
                     let wordNumber=[];
                       switch (lenNumber) {
@@ -116,6 +125,8 @@
         </pre>
 
     </section>
+    </div>
+</main>
     <footer>
 <div class="logo">
     <a href="https://github.com/yuliya-mit">
@@ -129,6 +140,7 @@
         </div>
 
     </footer>
+    
 </div>
     
 

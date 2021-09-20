@@ -21,7 +21,30 @@ header {
     align-items: center;
     
 }
+main {
+    display: flex;
 
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #e0b090;
+    margin-top: 30px;
+    padding: 10px;
+    flex-grow: 1;
+    float: left;
+    height: 100%;
+}
+.wrapper_center {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+    margin-top: 30px;
+    padding: 10px;
+    flex-direction: column;
+
+}
 .photo img {
     width: 200px;
     height: 200px;
@@ -41,9 +64,12 @@ ul {
     list-style: none;
     padding-left: 0;
 }
-
+li {
+    padding-bottom: 20px;
+}
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 .menu {
@@ -62,7 +88,7 @@ a {
 }
 
 section {
-    margin-top: 30px;
+    margin-top: 30px 10px;
 }
 
 h3{
